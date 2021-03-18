@@ -16,6 +16,7 @@ export class UsersService {
         newUser.name = user_data.name
         newUser.email = user_data.email
         newUser.password = user_data.password
+        newUser.verificated = user_data.verificated
         newUser.role = UsersRole.CLIENT
 
         return await this._userRepository.save(newUser)

@@ -24,7 +24,7 @@ export class UsersEntity extends BaseEntity{
     @Column({ type: 'varchar', select: false, nullable: false })
     password: string;
 
-    @Column()
+    @Column({type: 'boolean'})
     verificated: boolean;
 
     @CreateDateColumn({ type: 'timestamptz', default: () => 'CURRENT_TIMESTAMP' })
